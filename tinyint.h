@@ -9,6 +9,9 @@
 
 typedef char tinyint;
 
+#define GET_1_BYTE(X) X
+#define SET_1_BYTE(X) X
+
 #define DatumGetTinyInt(X) ((tinyint) GET_1_BYTE(X))
 #define TinyIntGetDatum(X) ((Datum) SET_1_BYTE(X))
 
